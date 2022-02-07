@@ -3,7 +3,7 @@ import hashlib
 
 
 def sha256(data):
-    isinstance(data, str):
+    if isinstance(data, str):
         data = data.encode("utf-8")
 
     return hashlib.sha256(data).digest()
